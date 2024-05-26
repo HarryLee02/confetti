@@ -5,7 +5,7 @@ function checkName() {
     if (userInput !== '' && userInput === expectedName) {
     
             // Redirect to another page (e.g., 'page3.html')
-            window.location.href = 'hello.html';
+            window.location.href = '/hello.html';
         } else {
             $('#exampleModal').modal('show'); // Show an alert if the input doesn't match
         }
