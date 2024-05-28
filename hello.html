@@ -52,7 +52,7 @@
 
   <header>
     <button id="themeToggle" title="Switch Theme" class="theme"></button>
-    <a class="github-icon" title="Visit on GitHub" href="https://github.com/catdad/canvas-confetti" aria-label="View source on Github">
+    <a class="github-icon" title="Visit on GitHub" href="https://github.com/HarryLee02/confetti" aria-label="View source on Github">
       <svg class="icon"><use xlink:href="#octo"></use></svg>
     </a>
   </header>
@@ -62,7 +62,6 @@
   <div class="container">
     <div class="group" data-name="random">
       <div class="flex-rows">
-        
         <div class="description">
           <p>
             Happy birthday! 🎉🎉🎉 some vô tri stuff right here, I hope you háp pi háp pi :>
@@ -232,38 +231,21 @@
     }
 
     window.onload = function () {
-      var audio = new Audio('src/dam_cuoi_mien_tay.m4a'); // Replace with your audio file path
+      var audio = new Audio('src/videoplayback.m4a'); // Replace with your audio file path
       audio.play();
       var group = document.querySelector('.group');
-        var name = group.getAttribute('data-name');
-        var button = group.querySelector('.run');
-        eval(getCode("fireworks"));
-        button.onclick = function (ev) {
-          ev.preventDefault();
-          try {
-            eval(getCode(name));
-          } catch (e) {
-            console.error(e);
-          }
-        };
+      var name = group.getAttribute('data-name');
+      var button = group.querySelector('.run');
+      eval(getCode("fireworks"));
+      button.onclick = function (ev) {
+        ev.preventDefault();
+        try {
+          eval(getCode(name));
+        } catch (e) {
+          console.error(e);
+        }
       };
-    
+    };
   </script>
-
-  <script>
-    // render favicon live, because why not
-    addEventListener("load", (event) => {
-      const image = confetti.shapeFromText('🎊', { scalar: 512/10 });
-      const canvas = new OffscreenCanvas(image.bitmap.width, image.bitmap.height);
-      const ctx = canvas.getContext('bitmaprenderer');
-      ctx.transferFromImageBitmap(image.bitmap);
-
-      canvas.convertToBlob().then(blob => {
-        const icon = document.getElementById('favicon');
-        icon.setAttribute('href', URL.createObjectURL(blob));
-      });
-    });
-  </script>
-
 </body>
 </html>
