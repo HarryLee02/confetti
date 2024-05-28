@@ -64,9 +64,11 @@
       <div class="flex-rows">
         <div class="description">
           <p>
-            Happy birthday! 🎉🎉🎉 some vô tri stuff right here, I hope you háp pi háp pi :>
+            Happy birthday! 🎉🎉🎉 some vô tri stuff right here, I hope you háp pi háp pi :D
           </p>
-          <img src="src/toothless.gif" alt="toothless gif">
+          <img src="src/toothless.gif" alt="toothless gif" width="250">
+          <img src="src/birthday.gif" alt="birthday gif" width="250">
+          <audio id="myAudio" src="src/videoplayback.m4a"></audio>
         </div>
         <div class="left">
           <h2><a href="#random" id="random" class="anchor">Name</a></h2>
@@ -231,7 +233,8 @@
     }
 
     window.onload = function () {
-      var audio = new Audio('src/videoplayback.m4a'); // Replace with your audio file path
+      const audio = document.getElementById("myAudio");
+      audio.loop = true;
       audio.play();
       var group = document.querySelector('.group');
       var name = group.getAttribute('data-name');
