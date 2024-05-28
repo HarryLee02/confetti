@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #eeeeee;
+    --primary-color: #000000;
     --secondary-color: #363636;
     --secondary-variant-color: #272727;
     --background-color: #212121;
@@ -25,7 +25,10 @@ body {
 h1, h2, .center {
     text-align: center;
   }
-
+.form-label
+{
+  color: #ffffff;
+}
 h1 {
 margin-top: 64px;
 }
