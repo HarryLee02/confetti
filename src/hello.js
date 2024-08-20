@@ -2,8 +2,8 @@
 
 const birthdayMap = new Map();
 birthdayMap.set("Nguyen Tran Bao Nhi", "26-05-2004");
-birthdayMap.set("Le Ngoc Hieu", "02-11-2004");
-birthdayMap.set("Nguyen Hoang Phuong Doanh", "21-08-2004");
+birthdayMap.set("Nguyen Hoang Phuong Doanh", "02-11-2004");
+birthdayMap.set("Le Ngoc Hieu", "21-08-2004");
 
 const nameForm = document.getElementById("nameForm");
 
