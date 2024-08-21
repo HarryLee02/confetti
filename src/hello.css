@@ -14,7 +14,7 @@
     --theme-switch: var(--switch-moon-white);
   }
 body {
-    background: linear-gradient(-45deg, rgba(168,237,234,1) 0%, rgba(254,214,227,1) 100%);
+    background: linear-gradient(-90deg, rgba(168,237,234,1) 0%, rgba(254,214,227,1) 100%);
     color: var(--primary-color);
     font-size: 1em;
     font-family: 'Noto Sans', sans-serif;
